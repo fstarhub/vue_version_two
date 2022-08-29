@@ -1,3 +1,10 @@
+<!--
+ * @Description: 
+ * @Autor: fengshuai
+ * @Date: 2022-08-29 22:06:45
+ * @LastEditors: fengshuai
+ * @LastEditTime: 2022-08-29 23:15:34
+-->
 <template>
   <div class="indexContainer">
     <div class="indexBox">欢迎来到我的项目</div>
@@ -8,15 +15,15 @@
       <div @click="$router.push('/Dthree')" class="leftOne">
         <div class="inner leftInner">D3.js</div>
       </div>
-      <div @click="$router.push('/Iview')" class="center">
+      <!-- <div @click="$router.push('/Iview')" class="center">
         <div class="inner leftInner">Iview</div>
-      </div>
+      </div> -->
       <div @click="$router.push('/echarts')" class="rightOne">
         <div class="inner rightInner">Echarts</div>
       </div>
-      <div @click="$router.push('/vxeTable')" class="right">
+      <!-- <div @click="$router.push('/vxeTable')" class="right">
         <div class="inner rightInner">vxe-table</div>
-      </div>
+      </div> -->
     </div>
     <!-- <div class="test">
       <Test></Test>
