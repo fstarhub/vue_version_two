@@ -11,9 +11,9 @@
       <el-row>
         <el-button round @click="getMock">mock后台数据</el-button>
         <el-button type="primary" round @click="getData">测试后台连接</el-button>
-        <el-button type="info" round @click="testInterface(1)">测试接口参数1</el-button>
-        <el-button type="warning" round @click="testInterface(2)">测试接口参数2</el-button>
-        <el-button type="danger" round @click="testInterface(3)">测试接口参数3</el-button>
+        <el-button type="info" round @click="testInterface('zhonglei')">测试接口参数1</el-button>
+        <el-button type="warning" round @click="testInterface('dengji')">测试接口参数2</el-button>
+        <el-button type="danger" round @click="testInterface('chengdu')">测试接口参数3</el-button>
         <el-button type="success" round @click="doDispatch">dispatch</el-button>
       </el-row>
       <!-- <p>年龄:{{ age }}</p>
@@ -23,7 +23,7 @@
           <el-form-item label="食物种类：">
             <el-select v-model="shiwu" placeholder="请选择">
               <el-option
-                v-for="item in options"
+                v-for="item in dict.zhonglei"
                 :key="item.value"
                 :label="item.label"
                 :value="item.value">
@@ -33,7 +33,7 @@
           <el-form-item label="风险等级：">
             <el-select v-model="dengji" placeholder="请选择">
               <el-option
-                v-for="item in options"
+                v-for="item in dict.dengji"
                 :key="item.value"
                 :label="item.label"
                 :value="item.value">
@@ -43,7 +43,7 @@
           <el-form-item label="熟悉程度：">
             <el-select v-model="chengdu" placeholder="请选择">
               <el-option
-                v-for="item in options"
+                v-for="item in dict.chengdu"
                 :key="item.value"
                 :label="item.label"
                 :value="item.value">
@@ -65,9 +65,11 @@ export default {
       shiwu: '',
       dengji: '',
       chengdu: '',
-      options: []
     }
   },
+  dicts: ['zhonglei', 'dengji', 'chengdu'],
+  aaaa: 'aaa',
+  bbbb: 'bbb',
   computed: {
     // 获取state中的状态值，方法一 组件里面获取state中的状态值
     ...mapState({
@@ -78,6 +80,7 @@ export default {
   },
   mounted() {
     // this.$store.dispatch('getHeros')
+    console.log(this.dict, 'dict')
   },
   methods: {
     getMock() {
