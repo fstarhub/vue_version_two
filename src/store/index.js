@@ -3,18 +3,18 @@ import Vuex from 'vuex'
 // import axios from 'axios'
 
 
-// import state from './state'
-// import mutations from './mutations'
-// import actions from './actions'
-// import getters from './getters'
+import state from './state'
+import mutations from './mutations'
+import actions from './actions'
+import getters from './getters'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  // state,
-  // mutations,
-  // actions,
-  // getters,
-  // modules:{
-  //   hello:hello,
-  // }
+  state,
+  mutations,
+  actions,
+  getters,
+  modules:{
+    // hello:hello,
+  }
 })

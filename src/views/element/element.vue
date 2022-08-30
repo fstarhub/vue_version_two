@@ -11,7 +11,7 @@
     <div class="elementTitle">element案例</div>
     <div class="container">
       <div class="navContainer">
-        <!-- <sideBar /> -->
+        <sideBar />
       </div>
       <div class="content">
         <router-view></router-view>
@@ -23,11 +23,11 @@
 <script>
 //这里可以导入其他文件（比如：组件，工具js，第三方插件js，json文件，图片文件等等）
 //例如：import 《组件名称》 from '《组件路径》';
-// import sideBar from '../../components/element/sideBar'
+import sideBar from '../../components/sideBar.vue'
 export default {
   //import引入的组件需要注入到对象中才能使用
   components: {
-    // sideBar
+    sideBar
   },
   data() {
     //这里存放数据
@@ -90,6 +90,7 @@ export default {
             // float: left;
             width: 100%;
             height: 100%;
+            text-align: left;
         }
     }
 }

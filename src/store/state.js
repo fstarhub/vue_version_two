@@ -3,11 +3,11 @@
 export default {
   herosData:[],
   filmMessage: {
-    fileName: '12',
-    age: '12',
-    type: '12',
+    fileName: '',
+    age: '',
+    type: '',
   },
-  name:'',
+  name:'李四',
   age: 0,
   type: '',
   status: '',

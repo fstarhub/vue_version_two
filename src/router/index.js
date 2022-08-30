@@ -14,7 +14,7 @@ import Line from '@/views/echarts/components/airLines.vue'
 // import project from '@/components/echarts/project.vue'
 // import VxeTable from '@/views/vxeTable/index.vue'
 
-import Select from '@/views/element/components/select.vue'
+import Select from '@/views/element/components/selectCom.vue'
 // import Search from '@/components/element/search.vue'
 
 // import table from '@/components/vxeTable/table.vue'
