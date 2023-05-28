@@ -15,6 +15,7 @@ import Line from '@/views/echarts/components/airLines.vue'
 // import VxeTable from '@/views/vxeTable/index.vue'
 
 import Select from '@/views/element/components/selectCom.vue'
+import Test from '@/views/element/components/test.vue'
 // import Search from '@/components/element/search.vue'
 
 // import table from '@/components/vxeTable/table.vue'
@@ -41,6 +42,10 @@ export default new Router({
           path: 'select',
           component: Select
         },
+        {
+          path: 'test',
+          component: Test
+        }
         // {
         //   path: 'search',
         //   component: Search

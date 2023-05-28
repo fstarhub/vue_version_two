@@ -1,3 +1,10 @@
+<!--
+ * @Description: 
+ * @Autor: fengshuai
+ * @Date: 2022-09-01 23:30:45
+ * @LastEditors: fengshuai
+ * @LastEditTime: 2022-12-02 14:43:07
+-->
 <!-- 侧边栏 -->
 <template>
   <div class="sidebarContainer">
@@ -8,6 +15,9 @@
       <ul class="sideBarAll">
         <li class="itemLine">
           <router-link to="/element/select">按钮与选择</router-link>
+        </li>
+        <li class="itemLine">
+          <router-link to="/element/test">测试</router-link>
         </li>
       </ul>
     </div>
