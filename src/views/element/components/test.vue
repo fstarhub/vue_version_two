@@ -3,7 +3,7 @@
  * @Autor: fengshuai
  * @Date: 2022-12-02 14:45:03
  * @LastEditors: fengshuai
- * @LastEditTime: 2022-12-02 15:52:13
+ * @LastEditTime: 2023-06-02 10:10:03
 -->
 <template>
   <el-container>
@@ -30,6 +30,13 @@ export default {
       addInput: '',
       listArr: []
     }
+  },
+  beforeCreate() {
+    // console.log(this, 'beforecreate')
+    // debugger
+  },
+  created() {
+    console.log(this, 'created')
   },
   methods: {
     newAdd() {
